@@ -1,0 +1,7 @@
+<h2>Completion in Time for Specified Project and User</h2>
+<% @projects.each do |project| %>
+  <h2><%= project %></h2>
+  <% TicketCube.users_for_project(project).each do |user| %>
+    <p><%= link_to user, project_user_completion_by_project_users_path(project,user) %></p>
+  <% end %>
+<% end %>

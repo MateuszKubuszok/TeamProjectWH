@@ -1,0 +1,4 @@
+<h2>Visits on Project Page for Specified Project</h2>
+<% @projects.each do |project| %>
+  <p><%= link_to project, project_visits_by_projects_path(project) %></p>
+<% end %>

@@ -1,0 +1,5 @@
+<h2>All Projects Bug Completion on Specified Time</h2>
+<% @dates.each do |date| %>
+  <p><%= link_to "#{date[:year]}/#{date[:month]}/#{date[:day]}", year_month_day_bug_completion_index_path(date[:year], date[:month], date[:day]) %></p>
+<% end %>
+

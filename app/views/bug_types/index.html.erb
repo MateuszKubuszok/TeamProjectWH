@@ -1,0 +1,4 @@
+<h2>All Projects Bug Completion on Specified Time (with Bug Types Specified)</h2>
+<% @dates.each do |date| %>
+  <p><%= link_to "#{date[:year]}/#{date[:month]}/#{date[:day]}", year_month_day_bug_types_path(date[:year], date[:month], date[:day]) %></p>
+<% end %>

@@ -1,0 +1,4 @@
+<h2>Completion in Time for Specified Project</h2>
+<% @projects.each do |project| %>
+  <p><%= link_to project, project_completion_by_projects_path(project) %></p>
+<% end %>

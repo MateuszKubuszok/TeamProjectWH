@@ -1,0 +1,7 @@
+<h2>User's Project Completion on Specified Date</h2>
+<% @users.each do |user| %>
+    <h4><%= user %></h4>
+    <% TicketCube.dates_for_user(user).each do |date| %>
+      <p><%= link_to "#{date[:year]}/#{date[:month]}/#{date[:day]}", user_year_month_day_user_projects_on_dates_path(user, date[:year], date[:month], date[:day]) %></p>
+    <% end %>
+<% end %>

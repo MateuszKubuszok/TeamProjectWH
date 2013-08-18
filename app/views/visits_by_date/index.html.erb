@@ -1,0 +1,4 @@
+<h2>Visits on Project Page for Specified Date</h2>
+<% @dates.each do |d| %>
+  <p><%= link_to "#{d[:year]}/#{d[:month]}/#{d[:day]}", year_month_day_visits_by_date_index_path(d[:year],d[:month],d[:day]) %></p>
+<% end %>

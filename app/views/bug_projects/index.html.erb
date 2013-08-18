@@ -1,0 +1,4 @@
+<h2>Bug Completion by Dates in Specified Project</h2>
+<% @projects.each do |name| %>
+  <p><%= link_to "#{name}", bug_project_path(name) %></p>
+<% end %>

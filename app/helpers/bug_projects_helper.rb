@@ -1,0 +1,2 @@
+module BugProjectsHelper
+end

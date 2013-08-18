@@ -1,0 +1,2 @@
+module CompletionByProjectUsersHelper
+end
